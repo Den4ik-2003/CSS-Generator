@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body id="gradient">
+    <section id="left-section">
+      <a href="../index.html">
+        <img class="arrow" src="../image/arrow.svg" alt="Arrow" />
+      </a>
+      <h1 class="title">Flex Generate</h1>
+
+      <div class="styles">
+        <div class="flex">
+          <div class="flexColumn">
+            <div class="flex">
+              <p class="txt1">Display:</p>
+              <select class="flexInputStyle">
+                <option value="flex">flex</option>
+              </select>
+            </div>
+            <div class="flex">
+              <p class="txt1">Flex Direction:</p>
+              <select class="flexInputStyle" id="flexDirection">
+                <option value="row">row</option>
+                <option value="column">column</option>
+                <option value="column-reverse">column-reverse</option>
+                <option value="row-reverse">row-reverse</option>
+              </select>
+            </div>
+            <div class="flex">
+              <p class="txt1">Justify Content:</p>
+              <select class="flexInputStyle" id="justifyContent">
+                <option value="start">start</option>
+                <option value="space-between">space-between</option>
+                <option value="space-around">space-around</option>
+                <option value="center">center</option>
+                <option value="end">end</option>
+              </select>
+            </div>
+          </div>
+          <div class="flexColumn">
+            <div class="flex">
+              <p class="txt1">Align Items:</p>
+              <select class="flexInputStyle" id="alignItems">
+                <option value="start">start</option>
+                <option value="end">end</option>
+                <option value="center">center</option>
+              </select>
+            </div>
+            <div class="flex">
+              <p class="txt1">Flex wrap:</p>
+              <select class="flexInputStyle">
+                <option value="wrap">wrap</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex">
+        <input
+          type="button"
+          value="Add Block"
+          id="addblock"
+          class="btnGenerateStyle"
+        />
+
+        <input
+          type="button"
+          value="Delete Block"
+          id="removeBlock"
+          class="btnGenerateStyle"
+        />
+      </div>
+      <h1 class="title">Code:</h1>
+      <p id="codeFlex">
+        #flexBlock {
+        <br />
+        display: flex;
+        <br />
+        flex-wrap: wrap;
+        <br />
+        flex-direction: row;
+        <br />
+        justify-content: start;
+        <br />
+        align-items: start;
+        <br />
+        }
+      </p>
+    </section>
+    <div class="line"></div>
+    <section id="blockContainer">
+      <div id="block"></div>
+    </section>
+    <script src="../js/flex.js"></script>
+  </body>
+</html>

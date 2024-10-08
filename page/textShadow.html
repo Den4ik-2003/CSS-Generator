@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Shadow</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body id="gradient">
+    <section id="left-section">
+      <a href="../index.html">
+        <img class="arrow" src="../image/arrow.svg" alt="Arrow" />
+      </a>
+      <h1 class="title">Generate Text Shadow</h1>
+
+      <div class="styles">
+        <div class="flex">
+            <div class="flexColumn">
+                <div class="flex">
+                <p class="txt1">Color Text:</p>
+                <input id="colorText" type="color" />
+              </div>
+              <div class="flex">
+                <p class="txt1">Shift right:</p>
+                <input class="number" id="shiftRight" type="range" min="-40" max="40" />
+              </div>
+              <div class="flex">
+                <p class="txt1">Shift down:</p>
+                <input class="number" id="shiftDown" type="range" min="-40" max="40" />
+              </div>
+        </div>
+        <div class="flexColumn">
+            <div class="flex">
+                <p class="txt1">Blur:</p>
+                <input class="number" id="blurText" type="range" min="0" max="20" />
+              </div>
+              <div class="flex">
+                <p class="txt1">Color Shadow:</p>
+                <input class="number" id="colorShadow" type="color" />
+              </div>
+        </div>
+        </div>
+  </div>
+    
+      <h1 class="title">Code:</h1>
+      <p id="codeTextShadow">
+        #wordTextShadow {
+        <br />
+        text-shadow: 2px 2px 2px #d7db03;
+        <br />
+        color: #ffffff;
+        <br />
+        }
+      </p>
+    </section>
+    <div class="line"></div>
+    <section id="right-section" class="worldTextShadowContainer">
+      <h1 id="textShadow" class="worldTextShadow">Hello world!</h1>
+    </section>
+    <script src="../js/textShadow.js"></script>
+  </body>
+</html>

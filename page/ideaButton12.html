@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button Idea</title>
+    <link rel="stylesheet" href="../css/ideasButton.css" />
+  </head>
+  <body>
+    <a href="../page/ideaButton.html">
+      <img class="arrow" src="../image/arrow.svg" alt="Arrow" />
+    </a>
+    <section>
+      <div class="flex">
+        <div class="btnContainer">
+          <button class="btn10">Button</button>
+        </div>
+        <p class="code">
+          <span>
+            <br />
+            button { <br />
+            position: relative; <br />
+            padding: 10px 20px; <br />
+            border-radius: 7px; <br />
+            border: 1px solid rgb(61, 106, 255); <br />
+            font-size: 14px; <br />
+            text-transform: uppercase; <br />
+            font-weight: 600; <br />
+            letter-spacing: 2px; <br />
+            background: transparent; <br />
+            color: #fff; <br />
+            overflow: hidden; <br />
+            box-shadow: 0 0 0 0 transparent; <br />
+            -webkit-transition: all 0.2s ease-in; <br />
+            -moz-transition: all 0.2s ease-in; <br />
+            transition: all 0.2s ease-in; <br />
+            }
+            <br />
+            <br />
+            button:hover { <br />
+            background: rgb(61, 106, 255); <br />
+            box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815); <br />
+            -webkit-transition: all 0.2s ease-out; <br />
+            -moz-transition: all 0.2s ease-out; <br />
+            transition: all 0.2s ease-out; <br />
+            }
+            <br />
+            <br />
+            button:hover::before { <br />
+            -webkit-animation: sh02 0.5s 0s linear; <br />
+            -moz-animation: sh02 0.5s 0s linear; <br />
+            animation: sh02 0.5s 0s linear; <br />
+            }
+          </span>
+          <span>
+            <br />
+            <br />
+            button::before { <br />
+            content: ''; <br />
+            display: block; <br />
+            width: 0px; <br />
+            height: 86%; <br />
+            position: absolute; <br />
+            top: 7%; <br />
+            left: 0%; <br />
+            opacity: 0; <br />
+            background: #fff; <br />
+            box-shadow: 0 0 50px 30px #fff; <br />
+            -webkit-transform: skewX(-20deg); <br />
+            -moz-transform: skewX(-20deg); <br />
+            -ms-transform: skewX(-20deg); <br />
+            -o-transform: skewX(-20deg); <br />
+            transform: skewX(-20deg); <br />
+            }
+            <br />
+            <br />
+            @keyframes sh02 { <br />
+            from { <br />
+            opacity: 0; <br />
+            left: 0%; <br />
+            }
+            <br />
+            <br />
+            50% { <br />
+            opacity: 1; <br />
+            }
+            <br />
+            <br />
+            to { <br />
+            opacity: 0; <br />
+            left: 100%; <br />
+            } <br />
+            }
+            <br />
+            <br />
+            button:active { <br />
+            box-shadow: 0 0 0 0 transparent; <br />
+            -webkit-transition: box-shadow 0.2s ease-in; <br />
+            -moz-transition: box-shadow 0.2s ease-in; <br />
+            transition: box-shadow 0.2s ease-in; <br />
+            }
+          </span>
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

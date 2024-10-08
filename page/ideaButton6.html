@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button Idea</title>
+    <link rel="stylesheet" href="../css/ideasButton.css" />
+  </head>
+  <body>
+    <a href="../page/ideaButton.html">
+      <img class="arrow" src="../image/arrow.svg" alt="Arrow" />
+    </a>
+    <section>
+      <div class="flex">
+        <div class="btnContainer">
+          <button class="btn5">Button</button>
+        </div>
+        <p class="code">
+          <span>
+            <br />
+            button,button::after { <br />
+            padding: 10px 50px; <br />
+            font-size: 20px; <br />
+            border: none; <br />
+            border-radius: 5px; <br />
+            color: white; <br />
+            background-color: transparent; <br />
+            position: relative; <br />
+            }
+            <br />
+            <br />
+            button::after { <br />
+            --move1: inset(50% 50% 50% 50%); <br />
+            --move2: inset(31% 0 40% 0); <br />
+            --move3: inset(39% 0 15% 0); <br />
+            --move4: inset(45% 0 40% 0); <br />
+            --move5: inset(45% 0 6% 0); <br />
+            --move6: inset(14% 0 61% 0); <br />
+            clip-path: var(--move1); <br />
+            content: 'GLITCH'; <br />
+            position: absolute; <br />
+            top: 0; <br />
+            left: 0; <br />
+            right: 0; <br />
+            bottom: 0; <br />
+            display: block; <br />
+            }
+            <br />
+            <br />
+            button:hover::after { <br />
+            animation: glitch_4011 1s; <br />
+            text-shadow: 10 10px 10px black; <br />
+            animation-timing-function: steps(2, end); <br />
+            text-shadow: -3px -3px 0px #1df2f0, 3px 3px 0px #E94BE8; <br />
+            background-color: transparent; <br />
+            border: 3px solid rgb(0, 255, 213); <br />
+            }
+            <br />
+            <br />
+            button:hover { <br />
+            text-shadow: -1px -1px 0px #1df2f0, 1px 1px 0px #E94BE8; <br />
+            }
+            <br />
+            <br />
+            button:hover { <br />
+            background-color: transparent; <br />
+            border: 1px solid rgb(0, 255, 213); <br />
+            box-shadow: 0px 10px 10px -10px rgb(0, 255, 213); <br />
+            }
+            <br />
+            <br />
+          </span>
+          <span>
+            @keyframes glitch_4011 { <br />
+            0% { <br />
+            clip-path: var(--move1); <br />
+            transform: translate(0px,-10px); <br />
+            }
+            <br />
+            <br />
+            10% { <br />
+            clip-path: var(--move2); <br />
+            transform: translate(-10px,10px); <br />
+            }
+            <br />
+            <br />
+            20% { <br />
+            clip-path: var(--move3); <br />
+            transform: translate(10px,0px); <br />
+            }
+            <br />
+            <br />
+            30% { <br />
+            clip-path: var(--move4); <br />
+            transform: translate(-10px,10px); <br />
+            }
+            <br />
+            <br />
+            40% { <br />
+            clip-path: var(--move5); <br />
+            transform: translate(10px,-10px); <br />
+            }
+            <br />
+            <br />
+            50% { <br />
+            clip-path: var(--move6); <br />
+            transform: translate(-10px,10px); <br />
+            }
+            <br />
+            <br />
+            60% { <br />
+            clip-path: var(--move1); <br />
+            transform: translate(10px,-10px); <br />
+            }
+            <br />
+            <br />
+            70% { <br />
+            clip-path: var(--move3); <br />
+            transform: translate(-10px,10px); <br />
+            }
+            <br />
+            <br />
+            80% { <br />
+            clip-path: var(--move2); <br />
+            transform: translate(10px,-10px); <br />
+            }
+            <br />
+            <br />
+            90% { <br />
+            clip-path: var(--move4); <br />
+            transform: translate(-10px,10px); <br />
+            }
+            <br />
+            <br />
+            100% { <br />
+            clip-path: var(--move1); <br />
+            transform: translate(0); <br />
+            } <br />
+            }
+          </span>
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

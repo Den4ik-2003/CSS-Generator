@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body id="gradient">
+    <section id="left-section">
+      <a href="../index.html">
+        <img class="arrow" src="../image/arrow.svg" alt="Arrow" />
+      </a>
+      <h1 class="title">Border</h1>
+
+      <div class="styles">
+        <div class="flex">
+        <p class="txt1">Color Block:</p>
+        <input id="colorBlockBorder" type="color" />
+        </div>
+        <div class="flex">
+            <p class="txt1">Border Width:</p>
+            <input class="number" id="border" type="range" min="1" max="25" />
+        </div>
+        <div class="flex">
+            <p class="txt1">Style:</p>
+            <select name="styleBorder" id="styleBorder">
+                <option value="solid">Solid</option>
+                <option value="dashed">Dashed</option>
+                <option value="double">Double</option>
+            </select>
+        </div>
+        <div class="flex">
+            <p class="txt1">Color Border:</p>
+            <input class="number" id="borderColor" type="color"/>
+        </div>
+      </div>
+      <h1 class="title">Code:</h1>
+      <p id="codeBorder">
+        #squareBorder {
+        <br />
+        border: 2px solid #ffffff
+        <br />
+        background-color: #d7db03;
+        <br />
+        }
+      </p>
+    </section>
+    <div class="line"></div>
+    <section id="right-section">
+      <div id="squareBorder"></div>
+    </section>
+    <script src="../js/border.js"></script>
+  </body>
+</html>

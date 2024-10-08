@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Shadow</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body id="gradient">
+    <section id="left-section">
+      <a href="../index.html">
+        <img class="arrow" src="../image/arrow.svg" alt="Arrow" />
+      </a>
+      <h1 class="title">Generate Box Shadow</h1>
+
+      <div class="styles">
+        <div class="flex">
+          <div class="flexColumn">
+            <div class="flex">
+              <p class="txt1">Color Shadow:</p>
+              <input id="colorShadow" type="color" />
+            </div>
+            <div class="flex">
+              <p class="txt1">Horizontal Length:</p>
+              <input
+                class="number"
+                id="horizontal"
+                type="range"
+                min="-200"
+                max="200"
+              />
+            </div>
+            <div class="flex">
+              <p class="txt1">Vertical Length:</p>
+              <input
+                class="number"
+                id="vertical"
+                type="range"
+                min="-200"
+                max="200"
+              />
+            </div>
+          </div>
+          <div class="flexColumn">
+            <div class="flex">
+              <p class="txt1">Blur Radius:</p>
+              <input class="number" id="blur" type="range" min="0" max="300" />
+            </div>
+            <div class="flex">
+              <p class="txt1">Spread Radius:</p>
+              <input
+                class="number"
+                id="spread"
+                type="range"
+                min="-200"
+                max="100"
+              />
+            </div>
+            <div class="flex">
+              <p class="txt1">Color Block:</p>
+              <input class="number" id="colorBlock" type="color" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h1 class="title">Code:</h1>
+      <p id="codeBoxShadow">
+        #squareBoxShadow {
+        <br />
+        box-shadow: -1px -2px 36px 0px #ffffff;
+        <br />
+        background-color: #d7db03;
+        <br />
+        }
+      </p>
+    </section>
+    <div class="line"></div>
+    <section id="right-section">
+      <div id="squareBoxShadow"></div>
+    </section>
+    <script src="../js/boxShadow.js"></script>
+  </body>
+</html>

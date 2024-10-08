@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button Idea</title>
+    <link rel="stylesheet" href="../css/ideasButton.css" />
+  </head>
+  <body>
+    <a href="../page/ideaButton.html">
+      <img class="arrow" src="../image/arrow.svg" alt="Arrow" />
+    </a>
+    <section>
+      <div class="flex">
+        <div class="btnContainer">
+          <button class="btn-donate">Button</button>
+        </div>
+        <p class="code">
+          <span>
+            <br />
+            .btn-donate { <br />
+            --clr-font-main: hsla(0 0% 20% / 100); <br />
+            --btn-bg-1: hsla(194 100% 69% / 1); <br />
+            --btn-bg-2: hsla(217 100% 56% / 1); <br />
+            --btn-bg-color: hsla(360 100% 100% / 1); <br />
+            --radii: 0.5em; <br />
+            cursor: pointer; <br />
+            padding: 0.9em 1.4em; <br />
+            min-width: 120px; <br />
+            min-height: 44px; <br />
+            font-size: var(--size, 1rem); <br />
+            font-weight: 500; <br />
+            transition: 0.8s; <br />
+            background-size: 280% auto; <br />
+            background-image: linear-gradient( <br />
+            325deg, <br />
+            var(--btn-bg-2) 0%, <br />
+            var(--btn-bg-1) 55%, <br />
+            var(--btn-bg-2) 90% <br />
+            ); <br />
+            border: none; <br />
+            border-radius: var(--radii); <br />
+            color: var(--btn-bg-color); <br />
+            box-shadow: <br />
+            0px 0px 20px rgba(71, 184, 255, 0.5), <br />
+            0px 5px 5px -1px rgba(58, 125, 233, 0.25), <br />
+            inset 4px 4px 8px rgba(175, 230, 255, 0.5), <br />
+            inset -4px -4px 8px rgba(19, 95, 216, 0.35); <br />
+            }</span
+          >
+          <span>
+            <br />
+            <br />
+            .btn-donate:hover { <br />
+            background-position: right top; <br />
+            }
+            <br />
+            <br />
+            .btn-donate:is(:focus, :focus-visible, :active) { <br />
+            outline: none; <br />
+            box-shadow: <br />
+            0 0 0 3px var(--btn-bg-color), <br />
+            0 0 0 6px var(--btn-bg-2); <br />
+            }
+            <br />
+            <br />
+            @media (prefers-reduced-motion: reduce) { <br />
+            .btn-donate { <br />
+            transition: linear; <br />
+            } <br />
+            }
+          </span>
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

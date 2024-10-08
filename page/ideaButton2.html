@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button Idea</title>
+    <link rel="stylesheet" href="../css/ideasButton.css" />
+  </head>
+  <body>
+    <a href="../page/ideaButton.html">
+      <img class="arrow" src="../image/arrow.svg" alt="Arrow" />
+    </a>
+    <section>
+      
+      <div class="flex">
+        <div class="btnContainer">
+            <div class="button1">Button<span class="button-border1"></span></div>
+
+        </div>
+        <p class="code">
+<span>
+    <br>.button {
+     <br> padding: 1rem 2rem;
+     <br> border-radius: 0.5rem;
+     <br> border: none;
+     <br> font-size: 1rem;
+     <br> font-weight: 400;
+     <br> color: #f4f0ff;
+     <br> text-align: center;
+     <br> position: relative;
+     <br> cursor: pointer;
+    <br>}
+    
+   <br><br> .button::before {
+     <br>content: "";
+     <br>display: block;
+     <br>position: absolute;
+     <br>left: 0;
+     <br>top: 0;
+     <br>height: 100%;
+     <br>width: 100%;
+     <br>border-radius: 0.5rem;
+     <br>background: linear-gradient(
+          180deg,
+          rgba(8, 77, 126, 0) 0%,
+          rgba(8, 77, 126, 0.42) 100%
+        ),
+        rgba(47, 255, 255, 0.24);
+     <br> box-shadow: inset 0 0 12px rgba(151, 200, 255, 0.44);
+     <br> z-index: -1;
+    <br>}
+    <br><br>.button::after {
+        <br> content: "";
+        <br> display: block;
+        <br> position: absolute;
+        <br> top: 0;
+        <br> left: 0;
+        <br> width: 100%;
+        <br> height: 100%;
+        <br> background: linear-gradient(
+        <br>     180deg,
+        <br>     rgba(8, 77, 126, 0) 0%,
+        <br>     rgba(8, 77, 126, 0.42) 100%
+        <br>   ),
+        <br>   rgba(47, 255, 255, 0.24);
+        <br> box-shadow: inset 0 0 12px rgba(151, 200, 255, 0.44);
+        <br> border-radius: 0.5rem;
+        <br> opacity: 0;
+        <br> z-index: -1;
+        <br> transition: all 0.3s ease-in;
+       <br>}
+</span>
+            
+            
+            
+           <br> .button:hover::after {
+              <br>opacity: 1;
+            <br>}
+            
+            <br>.button-border {
+            <br>  position: absolute;
+             <br>top: 0;
+             <br>left: 0;
+             <br>height: 100%;
+             <br>width: 100%;
+             <br>border-radius: 0.5rem;
+             <br>z-index: -1;
+            <br>}
+            <br>
+           <br> .button-border::before {
+             <br>content: "";
+             <br>position: absolute;
+             <br>border-radius: 0.5rem;
+             <br>padding: 1px;
+             <br>inset: 0;
+             <br>background: linear-gradient(
+             <br>    180deg,
+             <br>    rgba(184, 238, 255, 0.24) 0%,
+             <br>    rgba(184, 238, 255, 0) 100%
+             <br>  ),
+             <br>  linear-gradient(0deg, rgba(184, 238, 255, 0.32), rgba(184, 238, 255, 0.32));
+             <br>-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+             <br>-webkit-mask-composite: xor;
+             <br> pointer-events: none;
+            <br>}
+            
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

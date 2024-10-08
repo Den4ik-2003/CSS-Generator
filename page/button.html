@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body id="gradient">
+    <section id="left-section">
+      <a href="../index.html">
+        <img class="arrow" src="../image/arrow.svg" alt="Arrow" />
+      </a>
+      <h1 class="title">Generate Button</h1>
+
+      <div class="styles">
+        <div class="flex">
+          <div class="flexColumn">
+            <div class="flex">
+              <p class="txt1">Color Button:</p>
+              <input id="colorButton" type="color" />
+            </div>
+            <div class="flex">
+              <p class="txt1">Padding Top and Bottom:</p>
+              <input
+                class="number"
+                id="paddingTopBottomButton"
+                type="range"
+                min="2"
+                max="100"
+              />
+            </div>
+            <div class="flex">
+                <p class="txt1">Padding Left and Right:</p>
+                <input
+                  class="number"
+                  id="paddingLeftRightButton"
+                  type="range"
+                  min="2"
+                  max="100"
+                />
+              </div>
+            <div class="flex">
+              <p class="txt1">Font size text:</p>
+              <input
+                class="number"
+                id="fontSizeText"
+                type="range"
+                min="15"
+                max="150"
+              />
+            </div>
+          </div>
+          <div class="flexColumn">
+            <div class="flex">
+                <p class="txt1">Color Text:</p>
+                <input class="number" id="colorTextButton" type="color" />
+              </div>
+            <div class="flex">
+              <p class="txt1">Color border:</p>
+              <input class="number" id="colorBorderButton" type="color"/>
+            </div>
+            <div class="flex">
+                <p class="txt1">Border Width:</p>
+                <input class="number" id="borderButtonWidth" type="range" min="0" max="25" />
+            </div>
+            <div class="flex">
+                <p class="txt1">Border Radius:</p>
+                <input class="number" id="borderButtonRadius" type="range" min="0" max="200" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="./ideaButton.html">
+        <input
+          type="button"
+          value="Ideas for your button"
+          id="idea"
+          class="btnGenerateStyle"
+        />
+      </a>
+
+      <h1 class="title">Code:</h1>
+      <p id="codeBoxShadow">
+        #buttonStyle {
+        <br />
+        padding: 20px 50px;
+        <br />
+        font-size: 50px;
+        <br />
+        background-color: #d7db03;
+        <br />
+        border-radius: 10px;
+        <br />
+        color: #000000;
+        <br />
+        border: 0px solid #000000;
+        <br />
+        }
+      </p>
+    </section>
+    <div class="line"></div>
+    <section id="right-section">
+      <input type="button" id="buttonStyle" value="Button">
+    </section>
+    <script src="../js/button.js"></script>
+  </body>
+</html>

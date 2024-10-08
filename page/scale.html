@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scale</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body id="gradient">
+    <section id="left-section">
+      <a href="../index.html">
+        <img class="arrow" src="../image/arrow.svg" alt="Arrow" />
+      </a>
+      <h1 class="title">Scale</h1>
+
+      <div class="styles">
+        <div class="flex">
+        <p class="txt1">Color Block:</p>
+        <input id="colorBlockScale" type="color" />
+        </div>
+        <div class="flex">
+            <p class="txt1">Scale:</p>
+            <input class="number" id="scale" type="range" min="0" max="2" step="0.05" />
+        </div>
+      </div>
+      <h1 class="title">Code:</h1>
+      <p id="codeScale">
+        #squareScale {
+        <br />
+        transform: scale(1);
+        <br />
+        background-color: #d7db03;
+        <br />
+        }
+      </p>
+    </section>
+    <div class="line"></div>
+    <section id="right-section">
+      <div id="squareScale"></div>
+    </section>
+    <script src="../js/scale.js"></script>
+  </body>
+</html>

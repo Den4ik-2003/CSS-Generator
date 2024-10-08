@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body id="gradient">
+    <section id="left-section">
+      <a href="../index.html">
+        <img class="arrow" src="../image/arrow.svg" alt="Arrow" />
+      </a>
+      <h1 class="title">Generate Gradient</h1>
+
+      <div class="styles">
+        <div class="flex">
+          <p class="txt1">Color 1:</p>
+          <input id="color1" type="color" />
+        </div>
+        <div class="flex">
+          <p class="txt1">Color 2:</p>
+          <input id="color2" type="color" />
+        </div>
+        <div class="flex">
+          <p class="txt1">Direction:</p>
+          <input id="number" class="number" type="number" />
+        </div>
+      </div>
+      <h1 class="title">Code:</h1>
+      <p id="codeGradient">
+        #square {
+        <br />
+        background: linear-gradient(45deg, #f5f7fa, #c3cfe2);
+        <br />
+        }
+      </p>
+    </section>
+    <div class="line"></div>
+    <section id="right-section">
+      <div id="square"></div>
+    </section>
+    <script src="../js/gradient.js"></script>
+  </body>
+</html>
